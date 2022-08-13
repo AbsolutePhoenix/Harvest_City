@@ -84,6 +84,7 @@ public class CropBlockAge3 extends BaseCropBlock implements EntityBlock {
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
         return HCBlockEntities.CROP_ENTITY.get().create(pPos, pState);
+
     }
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
