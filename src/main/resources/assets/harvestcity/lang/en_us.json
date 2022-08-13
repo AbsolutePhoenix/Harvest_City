@@ -1,0 +1,26 @@
+{
+  "item.harvestcity.tier1hoe": "Copper Hoe",
+  "item.harvestcity.tier2hoe": "Stone Hoe",
+  "item.harvestcity.tier3hoe": "Iron Hoe",
+  "item.harvestcity.tier4hoe": "Diamond Hoe",
+  "item.harvestcity.tier5hoe": "Emerald Hoe",
+  "item.harvestcity.tier1wateringcan": "Copper Watering Can",
+  "item.harvestcity.tier2wateringcan": "Stone Watering Can",
+  "item.harvestcity.tier3wateringcan": "Iron Watering Can",
+  "item.harvestcity.tier4wateringcan": "Diamond Watering Can",
+  "item.harvestcity.tier5wateringcan": "Emerald Watering Can",
+
+  "block.harvestcity.farmland": "Farmland",
+
+  "tooltip.harvestcity.plantedIn": "Can be planted in:",
+  "tooltip.harvestcity.startTotalDays": "§9Takes§r ",
+  "tooltip.harvestcity.endTotalDays": " §9days to grow.§r",
+  "tooltip.harvestcity.startRegrowthDays": "§9Regrows in §r",
+  "tooltip.harvestcity.endRegrowthDays": "§9 days.§r",
+  "tooltip.harvestcity.spring": "  §dSpring§r",
+  "tooltip.harvestcity.summer": "  §aSummer§r",
+  "tooltip.harvestcity.fall": "  §6Fall§r",
+  "tooltip.harvestcity.winter": "  §7Winter§r"
+
+
+}

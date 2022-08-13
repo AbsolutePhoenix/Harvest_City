@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "harvestcity:item/seasons_clock/winter"
+  }
+}

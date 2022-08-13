@@ -1,0 +1,12 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "harvestcity:item/seasons_clock/base"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1}, "model": "harvestcity:item/seasons_clock/spring" },
+    { "predicate": { "custom_model_data": 2}, "model": "harvestcity:item/seasons_clock/summer" },
+    { "predicate": { "custom_model_data": 3}, "model": "harvestcity:item/seasons_clock/fall" },
+    { "predicate": { "custom_model_data": 4}, "model": "harvestcity:item/seasons_clock/winter" }
+  ]
+}
