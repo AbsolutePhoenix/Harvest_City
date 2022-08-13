@@ -4,6 +4,7 @@
 
 -------------------
 #### LICENSE
+
 -------------------
 <pre>
    The license listed above is the MIT License. This license only applies to the the code of the mod.
@@ -16,6 +17,7 @@
 </pre>
 -------------------
 #### ABOUT
+
 -------------------
 <pre>
    Harvest City is a mod based around the idea of brining Stardew Valley to minecraft. There will be some
