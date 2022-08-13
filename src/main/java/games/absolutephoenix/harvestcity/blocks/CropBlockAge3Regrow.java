@@ -50,7 +50,6 @@ public class CropBlockAge3Regrow extends BaseCropBlock implements EntityBlock {
         this.product = productItem;
 
     }
-
     public IntegerProperty getAgeProperty() {return AGE;}
     public int getMaxAge(){
         return MAX_AGE;

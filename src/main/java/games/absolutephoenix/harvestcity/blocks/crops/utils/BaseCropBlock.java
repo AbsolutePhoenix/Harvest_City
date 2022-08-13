@@ -1,5 +1,6 @@
 package games.absolutephoenix.harvestcity.blocks.crops.utils;
 
+import games.absolutephoenix.harvestcity.blocks.FarmlandBlock;
 import games.absolutephoenix.harvestcity.blocks.entity.WitheredCrop;
 import games.absolutephoenix.harvestcity.reference.ModReference;
 import games.absolutephoenix.harvestcity.registry.HCBlocks;
@@ -7,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BushBlock;
@@ -20,7 +22,7 @@ public class BaseCropBlock extends BushBlock {
         super(properties);
     }
 
-    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+    public boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
         boolean isInSeason = false;
         for(int x = 0; x < 15; x++) {
             if (pLevel.getBlockState(pPos.above(x)).getBlock().equals(HCBlocks.GREENHOUSE_GLASS.get())) {
@@ -36,10 +38,16 @@ public class BaseCropBlock extends BushBlock {
                 }
             }
         if(isInSeason)
-            return pState.is(HCBlocks.FARMLAND.get());
+            return (pLevel.getBlockState(pPos).getBlock() instanceof FarmlandBlock);
         else
             return false;
     }
+
+    public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
+        BlockPos blockpos = pPos.below();
+        return this.mayPlaceOn(pLevel.getBlockState(blockpos), pLevel, blockpos);
+    }
+
     public IntegerProperty getAgeProperty() {return IntegerProperty.create("age", 0, 1);}
     public boolean isHasRegrowth(){
         return false;

@@ -13,7 +13,7 @@ public class WitheredCrop extends BaseCropBlock {
         super(Properties.of(Material.PLANT).noCollission().instabreak().sound(SoundType.CROP).noOcclusion());
 
     }
-    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+    public boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
             return pState.is(HCBlocks.FARMLAND.get());
     }
 }

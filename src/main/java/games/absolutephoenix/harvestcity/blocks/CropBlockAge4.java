@@ -53,7 +53,6 @@ public class CropBlockAge4 extends BaseCropBlock implements EntityBlock {
     public CropBlockAge4(RegistryObject<Item> productItem,  int[] stages, String[] seasons){
         this(productItem,  stages, seasons, 0);
     }
-
     public IntegerProperty getAgeProperty() {return AGE;}
     public int getMaxAge(){
         return MAX_AGE;
